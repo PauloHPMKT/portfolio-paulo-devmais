@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio</title>
+    <!--definindo folha de estilos (defining stylesheet)-->
+    <link rel="stylesheet" href="css-sass/style.css">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/caac635065.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="./img/devmais.png" alt="logo devmais">
+        </a>
+      </div>
+      <nav class="header--nav-bar">
+        <ul class="menu">
+          <li>
+            <a href="#about-section">Sobre</a>
+          </li>
+          <li>
+            <a href="#experience-section">Skills</a>
+          </li>
+          <li>
+            <a href="#works-section">Projetos</a>
+          </li>
+          <li>
+            <a href="#contact-section">Contato</a>
+          </li>
+        </ul>
+        <!--HAMBURGUER-MENU JS - RESPONSIVE-->
+        <div class="hamb-menu">
+          <img src="./img/hamb-menu-removebg-preview.png" alt="menu hamburguer">
+        </div>
+        <ul class="menu-hamb-js">
+          <li>
+            <a href="#about-section">Sobre</a>
+          </li>
+          <li>
+            <a href="#experience-section">Skills</a>
+          </li>
+          <li>
+            <a href="#works-section">Projetos</a>
+          </li>
+          <li>
+            <a href="#contact-section">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--TOTAL APPLICATION-->
+    <main>
+      <!--HOME SECTION-->
+      <section class="introduction">
+        <div class="introduction-block">
+          <div class="block--titles">
+            <h1>Paulo Sérgio</h1>
+            <span class="typemachine" id="typeWriter"></span>
+          </div>
+
+          <div class="social-links">
+            <ul>
+              <li>
+                <a href="https://www.github.com/PauloHPMKT" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/dev.mais" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.linkedin.com/in/paulo-sergio-frontend-dev" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-style">
+            <button id="to-works">
+              <a href="#works-section">
+                Portfolio
+              </a>
+            </button>  
+            <button id="toContacts">
+              <a href="#contact-section">
+                Contate-me
+              </a>
+            </button>  
+          </div>
+        </div>
+
+        <div class="my-image">
+          <img src="./img/avatar-pic.png" alt="avatar Paulo">
+        </div>
+      </section>
+      <!--ABOUT SECTION-->
+      <section class="about" id="about-section" data-animation="right">
+        <h2>Olá, conheça sobre mim</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="./img/about.png" alt="sobre mim">
+          </div>
+          <article class="about-description">
+            <p>
+              Tudo começa quando ganho meu primeiro notebook, foi ai que entrei no mundo do design. Nada muito profissional, apenas para ganhar uma grana e praticar minhas habilidades, então decidi entrar no mercado freelancer prestando serviço como
+              criador e editor de artes visuais. Fiz isso até 2014 quando por motivo de força maior precisei dar uma pausa.
+              <br><br> Após alguns anos parado decidi retornar as atividades no fim de 2018 com o projeto HP Marketing Visual. Buscando profissionalizar meu trabalho, adquirindo novas skills mergulhei no mundo do desenvolvimento web e venho adquirindo
+              habilidades incríveis às quais irei compartilhar com vocês, com o objetivo de orientar e ajudar aqueles que sonham em andar pela trilha da programação! Entrem, fiquem a vontade e vamos incrementar conhecimento juntos!! Dev++..
+            </p>
+          </article>
+          <aside class="about-colaboration">
+            <h3>Colaboração</h3>
+            <p>
+              Estou aberto para colaborar com seu projeto. Eu posso entregar Interfaces de alta fidelidade, portfolios, landing pages e muito projetos mais assim acertamos.
+            </p>
+            <div>
+              <a href="./curriculo/curriculo-paulo.pdf" download>Baixe meu CV</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <!--TOOLS EXPERIENCE-->
+      <section class="tools-tecnologies" id="experience-section" data-animation="left">
+        <div class="box-description">
+            <h2>Tecnologias & Ferramentas</h2>
+            <p>
+              Aqui apresento as ferramentas e Tecnologias que utilizo para idealizar e desenvolver meu projetos.
+              <br><br>
+              Ressalto que estou em processo de aprendizado dos conceitos referente a Tecnologia React JS 
+            </p>
+            <a href="./curriculo/curriculo-paulo.pdf" download>Baixe meu CV</a>
+        </div>
+        <div class="box-tools-tecnology">
+          <div class="box-skills">
+            <span>Front-end Developer</span>
+            <div class="hard-skills">
+              <img align="center" alt="Paulo-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+              <img align="center" alt="Paulo-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+              <img align="center" alt="Paulo-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+              <img align="center" alt="Paulo-Git" height="30" width="40" src="https://icongr.am/devicon/git-original.svg?size=128&color=currentColor">
+              <img align="center" alt="Paulo-NodeJs" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"/>
+              <img align="center" alt="Paulo-ReactJs" height="30" width="40" src="https://icongr.am/devicon/react-original.svg?size=128&color=currentColor">
+            </div>
+            <div class="text">
+              Essas são as hard skills que adquiri em meus estudos e uso para criar meus projetos.
+            </div>
+          </div>
+          <div class="box-skills">
+            <span>Graphic Designer e UI Design</span>
+            <span class="hard-skills">
+              <img align="center" alt="Paulo-CANVA" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
+              <img align="center" alt="Paulo-Corel-draw" height="35" width="40" src="https://img.icons8.com/fluency/48/000000/coreldraw-2021.png"/>
+              <img align="center" alt="Paulo-Photoshop" height="35" width="40" src="https://img.icons8.com/color/48/000000/adobe-photoshop--v1.png"/>
+              <img align="center" alt="Paulo-Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+            </span>
+            <div class="text">
+              These are the tools I current use to creat, prototype and develop graphics editions and visual comunication.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--MY WORKS-->
+      <section class="my-works" id="works-section" data-animation="right">
+        <h2>Projetos</h2>
+        <p>Aqui estão representados alguns de meus principais projetos</p>
+        <div class="project">
+          <a href="https://paulohpmkt.github.io/Nanda-cake-doces/" target="_blank">
+            <img src="./img/nanda-cakes-project.png" alt="site nanda cakes e doces">
+          </a>
+          <a href="https://mylinktree-github-io-531tlwxie-paulohpmkt.vercel.app/" target="_blank">
+            <img src="./img/my-linktree.png" alt="my-linktree">
+          </a>
+          <a href="https://paulohpmkt.github.io/projetoBarberShop/" target="_blank">
+            <img src="./img/barber-shop.png" alt="site barber-shop">
+          </a>
+          <a href="https://paulohpmkt.github.io/gastronmicFoodSite.io/" target="_blank">
+            <img src="./img/gastronomic-page.png" alt="gastronomic page">
+          </a>
+          <a href="https://paulohpmkt.github.io/projetoToDoList/" target="_blank">
+            <img src="./img/todo-list.png" alt="lista de tarefas">
+          </a>
+          <a href="https://paulohpmkt.github.io/tematic-digitalwhatch/" target="_blank">
+            <img src="./img/tematic-watch.png" alt="tematic-watch">
+          </a>
+          <a href="https://paulohpmkt.github.io/calculadoraIMC.io/" target="_blank">
+            <img src="./img/calculadora-imc.png" alt="calculadora imc">
+          </a>
+          <a href="https://paulohpmkt.github.io/quotesGeneratorApp/" target="_blank">
+            <img src="./img/quotes-generator.png" alt="gerador de mensagens">
+          </a>
+          <a href="https://paulohpmkt.github.io/setHexaDecimalColor/" target="_blank">
+            <img src="./img/hexadecimal-generator.png" alt="hexadecimal-generator">
+          </a>
+        </div>
+      </section>
+      <!--CONTACT SECTION-->
+      <section class="contact" id="contact-section" data-animation="left">
+        <h2>Contact-me</h2>
+        <p>
+          Quer desenvolver seu projeto?tem algo em mente ou apenas trocar uma ideia? Diga oi ou contact-me nas redes sociais
+        </p>
+        <div class="contacts">
+          <div class="card">
+            <a href="#">
+              <span>
+                <img src="./img/logotipo-do-gmail.png" alt="email">
+              </span>
+            </a>
+            <h3>pauloserg861@gmail.com</h3>
+          </div>
+          <div class="card">
+            <a href="https://wa.me/5585988704658" target="_blank">
+              <span>
+                <img src="./img/iconmonstr-whatsapp-3.svg" alt="whatsapp">
+              </span>
+            </a>
+            <h3>85 98870-4658</h3>
+          </div>
+          <div class="card">
+            <span>Minhas principais redes sociais</span>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/paulo_devmais" target="_blank">
+                  <img src="./img/iconmonstr-instagram-11.svg" alt="instagram">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/PauloHPMKT" target="_blank">
+                  <img src="./img/iconmonstr-github-3.svg" alt="github">
+                </a>
+              </li>
+              <li>
+                <a href="http://www.linkedin.com/in/paulo-sergio-frontend-dev" target="_blank">
+                  <img src="./img/iconmonstr-linkedin-3.svg" alt="linkedin">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>      
+    </main>
+      <!--BACK TO TOP BOTTOM-->
+      <div class="btn-backto-top">
+        <button id="btnTop">
+          <img src="./img/up-arrow-removebg-preview.png" alt="bottom up-to-arrow">
+        </button>
+      </div>
+      <!--FOOTER-->
+      <footer class="footer">
+        Developed by Dev++ 2021
+      </footer>
+      <!--SET SCRIPTS PAGE-->
+      <script src="script.js"></script>
+      <script src="app.js"></script>
+  </body>
+</html>
