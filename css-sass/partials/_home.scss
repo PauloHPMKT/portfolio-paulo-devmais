@@ -1,0 +1,159 @@
+@import './variables';
+
+.introduction {
+    display: flex;
+    padding: $inner-height-section;
+    
+    @media (max-width: 930px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 30px 0 80px 0;
+    }
+
+    &-block {
+        @extend %toolSetup;
+
+        @media (max-width: 930px) {
+            width: 100%;
+        }
+
+        .block--titles {
+            width: 100%;
+            text-align: center;
+
+            h1 {
+                font-size: 100px;
+                font-family: "Oswald", sans-serif;
+                animation: roar 3000ms ease;
+    
+                @media (max-width: 1290px) {
+                    font-size: 70px;
+                }
+                @media (max-width: 450px) {
+                    font-size: 50px;
+                }
+                /*animation title*/
+                @keyframes roar {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            }
+    
+            .typemachine {
+                font-size: 25px;
+    
+                &::after {
+                    content: " | ";
+                    animation: blink 0.8s ease-in-out infinite;
+                    /*animation cursor*/   
+                    @keyframes blink {
+                        0% {
+                        opacity: 1;
+                        }
+                        50% {
+                        opacity: 0;
+                        }
+                        100% {
+                        opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-links > ul {
+            display: flex;
+
+            li {
+                margin: 15px;
+
+                .fab {
+                    font-size: 40px;
+                    color: $white-color;
+                    transition: 300ms all;
+
+                    &:hover {
+                        //filter: drop-shadow(0 0 15px $orange-color) invert(100%);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .btn-style {
+            display: flex;
+
+            button {
+                margin: 15px 0;
+                padding: 17px 25px;
+                border-radius: 50px;
+                border: none;
+                color: $white-color;
+                font-size: 20px;
+                cursor: pointer;
+
+                &:first-child {
+                    background-color: $orange-color;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $white-color;
+
+                    &:hover {
+                        color: #3419ce;
+                        transition: 300ms all; 
+                    }
+                }
+
+                &:last-of-type {
+                    background-color: transparent;
+
+                    &:hover {
+                        color: $orange-color;
+                        transition: 300ms all;
+                    }
+                }
+            }
+        }
+    }
+
+    .my-image {
+        @extend %toolSetup;
+        
+        img {
+            width: 400px;
+            border-radius: 100%;
+            border: 2px solid $white-color;
+            padding: 15px;
+            box-shadow: 0 0 30px #0c0342;
+            animation: floating 2s ease-in-out infinite;
+            /*animation floating img*/
+            @keyframes floating {
+                0% {
+                    transform: translatey(0px);
+                }
+                50% {
+                    transform: translatey(-8px);
+                }
+                100% {
+                    transform: translatey(0px);
+                }
+            }
+
+            @media (max-width: 1120px) {
+                width: 350px;
+                padding: 12px;
+            }
+            @media (max-width: 930px) {
+                width: 270px;
+            }
+            @media (max-width: 460px) {
+                width: 240px;
+            }
+        }
+    }
+}

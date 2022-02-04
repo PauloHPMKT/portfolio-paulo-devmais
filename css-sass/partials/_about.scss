@@ -1,0 +1,102 @@
+@import './variables';
+
+.about {
+    padding: $inner-height-section;
+    background-color: $white-color;
+    border-radius: 60px;
+    color: $secondary-font-color;
+    box-shadow: -2px 0 20px $secondary-font-color;
+
+    h2 {
+        @extend %subTitleFontConfig;
+
+        @media (max-width: 1150px) {
+            text-align: center;
+        }
+    }
+
+    &-content {
+        display: flex;
+
+        @media (max-width: 1150px) {
+            flex-direction: column;
+        }
+
+        .about-image {
+            @extend %widthDivSetup;
+
+            @media (max-width: 1150px) {
+                width: 100%;
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 60px;
+                
+                @media (max-width: 1150px) and (min-width: 850px) {
+                    width: 400px;
+                    border-radius: 40px;
+                }
+
+                @media (max-width: 849px) and (min-width: 400px) {
+                    width: 300px;
+                    border-radius: 20px;
+                }
+
+                @media (max-width: 399px) and (min-width: 320px) {
+                    width: 260px;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        .about-description {
+            @extend %widthDivSetup;
+            text-align: justify;
+
+            @media (max-width: 1150px) {
+                width: 100%;
+            }
+        }
+
+        .about-colaboration {
+            @extend %widthDivSetup;
+
+            @media (max-width: 1150px) {
+                width: 100%;
+            }
+
+            h3 {
+                font-size: 30px;
+                font-weight: 300;
+            }
+
+            p {
+                margin-bottom: 80px;
+
+                @media (max-width: 1150px) {
+                    margin-bottom: 30px;
+                    width: 100%;
+                }
+            }
+
+            a {
+                color: $secondary-font-color;
+                background-color: $orange-color;
+                padding: 20px 30px;
+                border-radius: 20px;
+                box-shadow: -2px 2px 5px #5a5963;
+
+                &::before {
+                    content: " ➝ ";
+                }
+
+                @media(max-width: 1015px) {
+                    padding: 15px 20px;
+                    border-radius: 17px;
+                }
+            } 
+        }
+    }
+}

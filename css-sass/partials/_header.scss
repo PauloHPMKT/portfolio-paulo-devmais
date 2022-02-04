@@ -1,0 +1,101 @@
+@import './variables';
+
+.header {
+    padding: 10px 45px;
+    @include align-items(flex, space-between, center);
+
+    /*---MEDIA QUERY HEADER---*/
+    @media (max-width: 840px) {
+      padding-top: 30px;
+    }
+
+    &-logo {
+        img {
+            width: 120px;
+        }
+    }
+
+    &--nav-bar {
+        @include align-items(flex, center, center);
+
+        .menu {
+            display: flex;
+            list-style: none;
+
+            /*---MEDIA QUERY MENU---*/
+            @media (max-width: 840px) {
+                display: none;
+            }
+
+            li {
+                padding: 20px;
+
+                a {
+                    padding: 10px;
+                    color: $white-color;
+
+                    &:hover {
+                        padding: 10px;
+                        border-bottom: 3px solid $orange-color;
+                        color: $orange-color;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+        .hamb-menu {
+            img {
+                width: 80px;
+                display: none;
+
+                @media (max-width: 840px) {
+                    display: block;
+                    width: 50px;
+                }
+            }
+        }  
+        .menu-hamb-js {
+            position: absolute;
+            top: 100px;
+            right: -100%;
+            opacity: 0;
+            z-index: 10000;
+            padding: 10px 100px;
+            background-color: #0c0342e3;
+            border-radius: 30px;
+            text-align: center;
+            transition: 800ms ease-in-out all; 
+
+            @media (max-width: 850px) and (min-width: 600px) {
+                display: flex;
+                align-items: center;
+                padding: 10px 50px;
+            }
+
+            li {
+                margin: 40px 0;
+                padding: 10px 0;
+
+                @media (max-width: 850px) and (min-width: 600px) {
+                    margin: 0 10px;
+                }
+            
+                a {
+                    color: $white-color;
+                    font-size: 25px;
+                    border-bottom: 1px solid $orange-color;
+                    padding: 10px 0;
+                }
+            }
+        }
+        .menu-hamb-js.open {
+            top: 100px;
+            right: 50px;
+            opacity: 1;
+
+            @media (max-width: 850px) and (min-width: 650px) {
+                right: 30px;
+            }
+        }
+    }
+}
